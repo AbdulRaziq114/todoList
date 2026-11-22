@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    /* color: whitesmoke; */
+    font-size: 18px;
+}
+body{
+    background-color: #013a33;
+}
+.main{
+    width: 100vw;
+    max-width: 768px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.screen{
+    background-color: #09504b;
+    border: 2px solid #03b1a5;
+    width: 80%;
+    padding:20px;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.sec1>h1{
+    font-size:30px ;
+    color: whitesmoke;
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 30px;
+    border: 2px solid #03b1a5;
+    background-color:whitesmoke;
+    
+}
+.sec2>h2{
+    color: #09504b;
+    font-size:30px;
+
+}
+
+.inputDiv{
+    width: 80%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+
+}
+#input{
+    height: 30px;
+    width: 90%;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid #03b1a5;
+    padding-left: 10px;
+    font-size: 20px;
+}
+#input::placeholder{
+    color:rgba(245, 245, 245, 0.658)
+}
+.inputDiv>button{
+    border-radius: 10px;
+    padding: 5px 8px;
+    border: 2px solid #03b1a5;
+    font-size: 15px;
+}
+.inputDiv>button:hover{
+    box-shadow:0 0 20px 1px #03b1a5;
+}
+.inputDiv>button:active{
+    background-color: #03b1a5;
+}
+button, input{
+    border:none;
+    outline: none;
+    background-color: #09504b;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#check{
+    height: 13px;
+    width: 13px;
+    appearance:none;
+    outline:2px solid #03b1a5;
+    border-radius: 2px;
+}
+
+.listMainDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding-bottom: 30px;
+
+}
+    
+.list_div{
+    border: 2px solid #03b1a5;
+    border-radius:10px;
+    display: flex;
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #09504b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px;
+
+}
+.list_div>p{
+    flex-grow: 1;
+    margin-left: 10px;
+    color: whitesmoke;
+}
+.edite,.delete{
+    color:whitesmoke
+}
+.delete:active ,.edite:active{
+  color:rgb(197, 38, 38);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:425px){
+    .sec1>h1,.sec2>h2{
+        font-size: 50px;
+    }
+}
